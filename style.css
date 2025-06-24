@@ -1,0 +1,618 @@
+*,
+.html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.container {
+    background-color: whitesmoke;
+    height: 10vh;
+    width: 100%;
+}
+
+/*
+NAVBAR CONFIGURATION
+*/
+.navbar-container {
+    background-color: black;
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(to right, #181817, #41413c);
+    animation: slideDown .9s ease-out forwards;
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+@keyframes slideDown {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.ul-navbar {
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.li-navbar {
+    list-style-type: none;
+    padding: 20px;
+    margin: 5px;
+    color: black;
+    font-size: 15px;
+}
+
+.logo-ghozi {
+    height: 30px;
+    width: 45px;
+    cursor: pointer;
+}
+
+.a-navbar {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.a-navbar:hover {
+    color: darkgrey;
+    transition: .1s ease-in-out;
+    transition-delay: .1s;
+}
+
+/* Untuk efek fade in saat masuk halaman */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Untuk efek fade out saat meninggalkan halaman */
+.fade-out {
+    animation: fadeOut 0.3s ease-out;
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+
+/*
+CONTENT CONFIGURATION
+*/
+.content-container {
+    background-color: whitesmoke;
+    background: linear-gradient(to left, #dbdbdb, #ddddd7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.img-content {
+    width: 500px;
+    height: 500px;
+    box-shadow: 8px 8px 5px 0px rgba(0,0,0,0.35);
+    border-radius: 250px;
+    transform: translate(300px, 25px);
+}
+
+
+/*
+TEXT CONFIGURATION
+*/
+.text-container {
+    background: linear-gradient(to left, #dbdbdb, #ddddd7);
+    height: 0vh;
+}
+
+.h1-text {
+    font-family: "GFS Didot", serif;
+    font-weight: 600;
+    color: darkred;
+    transform: translate(170px, -375px);
+}
+
+.p-text {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    font-style: normal;
+    transform: translate(150px, -325px);
+}
+
+/*
+BUTTON CONFIGURATION
+*/
+.container-button {
+    background: linear-gradient(to left, #dbdbdb, #ddddd7);
+}
+
+.button-container {
+    transform: translate(350px, -120px);
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    border: none;
+    height: 45px;
+    width: 110px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: linear-gradient(to left, rgb(36, 36, 36), rgb(97, 96, 94));
+}
+
+.button-container:hover {
+    color: #808080;
+    transition: .1s ease-in-out;
+    transition-delay: .1s;
+}
+
+/*
+FOOTER CONTAINER
+*/
+.footer-container {
+    height: 250px;
+    background: linear-gradient(to left, #000000, #222222);
+    display: flex;
+}
+
+.h1-footer-left {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    color: rgb(214, 213, 213);
+    align-items: center;
+    padding-left: 110px;
+}
+
+.p-footer {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 1;
+    color: rgb(214, 213, 213);
+    align-items: center;
+    padding-left: 110px;
+}
+
+.h1-footer-right {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    color: rgb(214, 213, 213);
+    padding-left: 30px;
+}
+
+.social-icons {
+    color: whitesmoke;
+    padding-left: 30px;
+}
+
+.icon {
+    margin-right: 15px;
+}
+
+.icon-link {
+    margin-right: 2px;
+    color: white;
+    text-decoration: none;
+}
+
+.icon-link:hover {
+    color: #222222;
+}
+
+.hr-line {
+    width: 1050px;
+    height: 1px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.3;
+    transform: translateX(125px);
+}
+
+.copyright, .copyright-2 {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 11px;
+    transform: translateX(545px);
+}
+
+.copyright-2 {
+    font-weight: bold;
+}
+
+.copyright-2:hover {
+    color: #949494;
+}
+
+body {
+    background-color: #181817;
+    transition: opacity 0.4s ease-in-out;
+    opacity: 1;
+    overflow-x: hidden;
+}
+
+/*
+    HOME CONTAINER SELESAI
+*/
+
+
+
+
+
+/*
+    ABOUT PAGE CONTAINER
+*/
+
+.h2-text-about {
+    display: inline-block;
+    font-family: "GFS Didot", serif;
+    font-weight: 500;
+    color: darkred;
+    padding: 12px 14px;
+    background: linear-gradient(90deg, #e5e2e2, #ffffff);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 4px 20px rgba(61, 59, 59, 0.4);
+
+    /* Awal posisi */
+    opacity: 0;
+    transform: translate(-100px, -1050px);
+
+    /* Animasi */
+    animation: slideInLeft 0.75s ease-out forwards;
+}
+
+/* Keyframe animasinya */
+@keyframes slideInLeft {
+    to {
+        opacity: 1;
+        transform: translateY(-1050px);
+    }
+}
+
+.about-section {
+    background-color: rgb(233, 229, 229);
+    padding: 50px 0;
+
+    opacity: 0;
+    animation: slideLeft 5s ease-out forwards;
+}
+
+@keyframes slideLeft {
+    to {
+        opacity: 1;
+    }
+}
+
+.p-about-text {
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px;
+    font-weight: 500;
+    font-style: normal;
+    transform: translateY(-1030px);
+    padding-left: 10px;
+}
+
+.content-container-about {
+    background-color: whitesmoke;
+    background: linear-gradient(to left, #dbdbdb, #ddddd7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.img-content-about {
+    width: 510px;
+    height: 475px;
+    box-shadow: 8px 8px 5px 0px rgba(0,0,0,0.35);
+    border-radius: 10px;
+    transform: translate(400px, 100px);
+}
+
+.about-quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-660px);
+}
+
+.h2-text-edu {
+    display: inline-block;
+    justify-content: left;
+    padding-left: 40px;
+    align-items: center;
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    transform: translate(-190px, -150px);
+    font-style: italic;
+    color: rgb(255, 255, 255);
+}
+
+.p-text-edu {
+    display: inline-block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 1;
+    font-size: 14px;
+    justify-content: left;
+    padding-left: 300px;
+    align-items: center;
+    transform: translate(-550px, -140px);
+    color: white;
+}
+
+.info-card {
+    height: 0vh;
+    background: linear-gradient(135deg, #0c0c0c,#2b2a2a);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding: 200px;
+    box-shadow: 0 0 30px rgba(96, 96, 97, 0.4); /* efek glow */
+    width: fit-content; 
+    transition: 0.3 ease;
+}
+
+.info-card:hover {
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.7); /* glow lebih terang saat hover */
+}
+
+.text-container-about {
+    height: 0vh;
+    background-color: #6b6b6b;
+}
+
+.h2-text-skill {
+    font-family: "Righteous", sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    transform: translate(600px, -200px);
+}
+
+.p-text-skill {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-size: 14px;
+    font-weight: 1;
+    transform: translate(602px, -205px);
+}
+
+.h2-text-tech {
+    font-family: "Righteous", sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    color: white;
+    transform: translate(-150px, -150px);
+}
+
+.img-tech {
+    height: 75px;
+    width: 150px;
+    transform: translate(-150px, -160px);
+}
+
+.img-unity {
+    height: 50px;
+    width: 120px;
+    transform: translate(-295px, -105px);
+}
+
+.button-years {
+    background-color: transparent;
+    color: whitesmoke;
+    border-color: whitesmoke;
+    height: 25px;
+    width: 100px;
+    border-radius: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transform: translate(-5px, -177px);
+}
+
+.h2-text-interest {
+    font-family: "Righteous", sans-serif;
+    font-style: italic;
+    color: white;
+    font-weight: 400;
+    transform: translate(600px, -270px);
+}
+
+.p-text-interest {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-size: 14px;
+    font-weight: 1;
+    transform: translate(602px, -260px);
+}
+
+.h2-text-language {
+    font-family: "Righteous", sans-serif;
+    font-style: italic;
+    color: white;
+    font-weight: 400;
+    transform: translate(599px, -215px);
+}
+
+.p-text-language {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-size: 14px;
+    font-weight: 1;
+    transform: translate(602px, -205px);
+}
+
+/*
+    HALAMAN ABOUT SELESAI
+*/
+
+/*
+    CONTACT CONTAINER
+*/
+
+.content-container-contact {
+    background: linear-gradient(to left, #0f0f0f, #1a1a1a);
+    background-image: url(blacknwhite\ profile.jpeg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.text-container-contact {
+    background: linear-gradient(to left, #dbdbdb, #ddddd7);
+    height: 0vh;   
+}
+
+.h1-text-contact {
+    font-family: "GFS Didot", serif;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    transform: translate(-270px, -90px);
+}
+
+/**/  
+  .contact-form {
+    background: white;
+    padding: 40px 30px;
+    width: 350px;
+    box-shadow: 0px 4px 30px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    transform: translateX(360px);
+
+     /* ANIMASI MASUK DARI KANAN */
+    opacity: 0;
+    animation: slideInRight 2s ease forwards;
+  }
+
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(450px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(360px);
+    }
+  }
+  
+  
+  .contact-form h3 {
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: gray;
+    margin-bottom: 25px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 18px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+    background: none;
+    outline: none;
+  }
+  
+  .contact-form textarea {
+    resize: vertical;
+    height: 80px;
+  }
+  
+  .upload {
+    font-size: 14px;
+    color: #555;
+    cursor: pointer;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+  
+  .upload input {
+    display: none;
+  }
+  
+  .contact-form button {
+    width: 100%;
+    font-family: "Righteous", sans-serif;
+    padding: 12px;
+    background: #1a1a1a;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background 0.3s;
+  }
+  
+  .contact-form button:hover {
+    background: #333;
+  }
+  
+/*
+  CONTACT SELESAI
+*/
+
+/*
+  PORTFOLIO
+*/
+
+.portfolio-section {
+    padding: 60px 20px;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.portfolio-title {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #1a1a1a;
+    letter-spacing: 2px;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.portfolio-item {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.portfolio-item p {
+    margin: 10px;
+    font-size: 14px;
+    color: #333;
+    font-family: 'Courier Prime', monospace;
+}
