@@ -54,18 +54,16 @@
             </div>
 
             <div class="contact-form">
+                <form name="ghozi">
                 <h3>CONTACT FORM</h3>
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="E-mail" required>
-                <input type="tel" placeholder="Phone">
-                <textarea placeholder="Message" required></textarea>
+                <input type="text" name="nama" placeholder="Name" required>
+                <input type="email" name="email" placeholder="E-mail" required>
+                <input type="tel" name="phone" placeholder="Phone">
+                <textarea name="pesan" placeholder="Message" required></textarea>
                 
-                <label class="upload">
-                  <input type="file">
-                  ⬆ Upload file &nbsp;&nbsp;<em>(Profile Company etc.)</em>
-                </label>
                 
                 <button type="submit">SEND MESSAGE →</button>
+                </form>
               </div>
         </div>
         <!-- CONTENT CONTAINER SELESAI -->
@@ -120,5 +118,25 @@
       </script>
 
     <script src="main.js"></script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyfxOnCAExcyg2Ve1n2iQp9rIv15Hgh8VBDGeG0PYrG3rAEVALBZkYOtHKbn4TZBS36/exec'
+        const form = document.forms['ghozi']
+      
+        form.addEventListener('submit', e => {
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                alert("Pesan berhasil dikirim!");
+                form.reset(); // Mengosongkan semua field form
+            })
+            .catch(error => {
+                alert("Terjadi kesalahan, silakan coba lagi.");
+                console.error('Error!', error.message);
+            });
+        });
+
+      </script>
+
 </body>
 </html>
